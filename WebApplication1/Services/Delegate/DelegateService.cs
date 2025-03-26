@@ -12,5 +12,10 @@
         {
             return $"Hello, {firstname} {lastname}";
         }
+
+        public int Operation(int a, int b, Func<int, int, int> callback)
+        {
+            return callback(a, b);
+        }
     }
 }
